@@ -2,8 +2,14 @@
   "extends": "@repo/typescript-config/base.json",
   "compilerOptions": {
     "outDir": "dist",
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "target": "ES2023",
+    "strict": true,
+    "esModuleInterop": true
+    
   },
-  "include": ["src"],
+  "include": ["prisma.config.ts", "prisma/**/*"],
   "exclude": ["node_modules", "dist"]
 }
